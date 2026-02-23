@@ -1,19 +1,17 @@
 # Architecture
 
-## Domain
+## Purpose
 
-API Reliability and Security Observability
+api-monitoring evaluates data pipeline and runtime signals to improve observability and governance.
 
-## Core Components
+## Components
 
-1. Input/command boundary
-2. Core monitoring or policy logic
-3. Persistence/reporting path
-4. Alerting and operator output
-5. Test and CI verification hooks
+- Signal intake layer
+- Assessment engine
+- Output formatter for downstream automation
 
-## Engineering Focus
+## Runtime Flow
 
-- Deterministic security outcomes
-- Safe behavior on missing dependencies
-- Fast feedback through CI tests
+1. Receive signal text/event.
+2. Compute deterministic risk score.
+3. Emit structured assessment result.
